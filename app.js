@@ -10,25 +10,26 @@ var notes=[2000, 500, 100, 20, 10, 5, 1]
 
 function handler1()
 {
-    console.log(bill.value)
-    if(bill.value<=0)
+    let bill1=Number(bill.value);
+    let cash1=Number(cash.value)
+    if(bill1<=0)
     {
         message1.innerText="enter valid amount";
 
     }
-  else if(bill.value>cash.value)
+  else if(bill1>cash1)
     {
         message1.innerText="please enter valid amount"
     }
-    else if(bill.value===cash.value)
+    else if(bill1===cash1)
     {
         message1.innerText="No need to give change"
     }
 
 
-    else if(bill.value<=cash.value)
+    else if(bill1<=cash1)
     {
-        var amount_returned=cash.value-bill.value
+        var amount_returned=cash1-bill1
         for(var i=0;i<=notes.length;i++)
         {
             var result=Math.trunc(amount_returned/notes[i]);
