@@ -27,7 +27,7 @@ margin: 0;
 
 .div1 {
     text-align: center;
-    font-size: larger;
+    font-size: large;
     color: #EA580C;
     
     font-weight: bold;
@@ -71,7 +71,7 @@ button {
 
 .table1 caption {
     font-size: larger;
-    padding: 1rem;
+    /* padding: 0.2rem; */
 }
 
 
