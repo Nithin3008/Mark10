@@ -24,6 +24,11 @@ function handler1() {
     }
     else if (bill1 === cash1) {
         message1.innerText = "No need to give change"
+        for (var i = 0; i <= notes.length; i++) {
+
+            noOfnotes[i].innerText = 0;
+        }
+
     }
 
 
